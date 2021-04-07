@@ -1,0 +1,13 @@
+<form [formGroup]="searchForm" (ngSubmit)="onSearch()" >
+  <div class="o-container">
+    <div class="row">
+      <div class="header-col">
+          <input type="text" class="c-input" formControlName="userName" placeholder="Username...">
+          <div id="empty_username" *ngIf="searchForm.get('userName').invalid && searchForm.get('userName').touched">Please enter username</div>
+      </div>
+      <div class="header-col">
+          <button class="c-btn c-btn--primary"  type="submit">Submit</button>
+      </div>
+    </div>
+  </div>
+</form>

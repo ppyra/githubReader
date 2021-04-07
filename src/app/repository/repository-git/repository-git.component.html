@@ -1,0 +1,15 @@
+<div class="cart">
+  <div class="text-margin">
+  <h6>Repository</h6>
+  <h2>{{ repository.name }}</h2>
+  <h6>Owner: {{ repository.owner.login }}</h6>
+</div>
+  <ul *ngFor="let branch of repository.branches">
+    <li class="label branch-info">
+      <div>
+        <h4 class="text-branch">Name: {{ branch.name }}</h4>
+        <h4 class="text-branch">SHA: {{ branch.sha }}</h4>
+    </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,4 @@
+<app-header></app-header>
+<app-modal [message]="errors" *ngIf="errors" (close)="onHandleError()"></app-modal>
+<router-outlet></router-outlet>
+

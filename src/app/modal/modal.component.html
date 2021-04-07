@@ -1,0 +1,11 @@
+<div class="backdrop" (click)="onClose()"></div>
+
+<div class="modal-box">
+  <div class="modal-header">
+    <h3 class="modal-text">Error</h3>
+  </div>
+  <p class="modal-text">{{ message }}</p>
+  <div class="modal-box-actions">
+    <button class="c-btn c-btn--alert" (click)="onClose()">Close</button>
+  </div>
+</div>
